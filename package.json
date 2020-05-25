@@ -6,6 +6,7 @@
     "start": "serve"
   },
   "dependencies": {
+    "@porsche-design-system/components-js": "^1.4.0",
     "serve": "^11.3.1"
   }
 }
