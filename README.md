@@ -7,7 +7,7 @@ Documentation about the project and information about Porsche Design System you 
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn serve`
 
 Runs the app in static mode.
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
