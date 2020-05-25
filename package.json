@@ -1,0 +1,11 @@
+{
+  "name": "sample-integration-vanillajs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^11.3.1"
+  }
+}
