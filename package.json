@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "serve"
+    "serve": "serve",
+    "build": "mkdir -p build && rm -rf ./build/* && cp index.html ./build/"
   },
   "dependencies": {
     "@porsche-design-system/components-js": "^1.4.0",
