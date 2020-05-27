@@ -104,11 +104,11 @@ source "${SCRIPT_DIR}/../shared/ensure-github-credentials.sh"
 if isCurrentBranchMasterBranch; then
   setup
   checkout_gh_pages
-  prepare_deployment "latest"
-  copy_sample "latest"
-  add_deployment_version "latest"
+  prepare_deployment # no folder is specified to host app in root
+  copy_sample # no folder is specified to host app in root
+  add_deployment_version # no folder is specified to host app in root
   deploy_to_gh_pages
-  verify_deployment "latest"
+  verify_deployment # no folder is specified to host app in root
 else
   setup
   checkout_gh_pages
