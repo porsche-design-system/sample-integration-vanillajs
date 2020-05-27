@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Sample Integration VanillaJS</title>
+
+    <style>
+      .pageLayout {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 2rem;
+      }
+
+      .divider {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    </style>
+    
+    <script type="module" src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.esm.js"></script>
+    <script nomodule src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.js"></script>
+    <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
+    <script nomodule src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="pageLayout">
+      <p-headline variant="headline-2" align="center">Example usage of the Porsche-Design-System VanillaJS</p-headline>
+      <p-divider class="divider"></p-divider>
+
+      <phn-header style="position: absolute; left: 0; right: 0;"></phn-header>
+
+      <div style="padding-top: 150px">
+        <div>
+          <p-button>Some PButton</p-button>
+        </div>
+        <div>
+          <p-link-pure>Some PLinkPure</p-link-pure>
+        </div>
+        <div>
+          <p-icon name="configurate"></p-icon>
+          <p-icon name="compare"></p-icon>
+          <p-icon name="search"></p-icon>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
