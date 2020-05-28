@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@porsche-design-system/components-js": "^1.4.0",
-    "@porschehn/navigation": "^1.2.0"
+    "@porschehn/navigation": "^1.2.1"
   },
   "devDependencies": {
     "serve": "^11.3.1"
