@@ -1,3 +1,12 @@
+# VanillaJS - Sample integration with Porsche Design System
+
+This is project shows the example usage of the Porsche Design System Components in VanillaJS.
+See also the [deployed project](https://porscheui.github.io/sample-integration-vanillajs).
+
+For further documentation regarding designing websites and the correct usage of the components, 
+you can visit our website https://designsystem.porsche.com/.
+
+
 # Introduction
 
 This is project shows the example usage of the Porsche Design System Components in VanillaJS.
