@@ -22,7 +22,7 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 * [Docker](https://www.docker.com) ([see below](#docker-installation-steps))
 
 ### Getting started
-1. Clone [`sample-integration-angular` repository](https://github.com/porscheui/porsche-sample-integration-angular)
+1. Clone [`sample-integration-vanillajs` repository](https://github.com/porscheui/sample-integration-vanillajs)
 1. Switch to __project root directory__
 1. Execute command `npm login --registry=https://porscheui.jfrog.io/porscheui/api/npm/npm/`
 1. Enter username, password (Artifactory API Key, __not__ Artifactory password!) and e-mail address when asked in terminal
@@ -41,8 +41,8 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
 ### Start
 1. Switch to __project root directory__
-1. Run `./docker.sh run-start` (starts test server for sample-integration-angular itself)
+1. Run `./docker.sh run-start` (starts test server for sample-integration-vanillajs itself)
 
 ### Build
 1. Switch to __project root directory__
-1. Run `./docker.sh run-build` (builds releasable sample-integration-angular npm package)
+1. Run `./docker.sh run-build` (builds releasable sample-integration-vanillajs npm package)
