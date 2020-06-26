@@ -18,6 +18,14 @@
         margin-bottom: 2rem;
         margin-top: 2rem;
       }
+
+      .contentWrapperSmall {
+        margin-top: 1rem;
+      }
+
+      .contentWrapperBig {
+        margin-top: 2rem;
+      }
     </style>
 
     <script
@@ -44,18 +52,50 @@
       <phn-header env="preview" style="position: absolute; left: 0; right: 0;"></phn-header>
 
       <div style="padding-top: 150px;">
-        <div>
-          <p-button>Some PButton</p-button>
-        </div>
-        <div>
-          <p-link-pure>Some PLinkPure</p-link-pure>
-        </div>
-        <div>
-          <p-icon name="configurate"></p-icon>
-          <p-icon name="compare"></p-icon>
-          <p-icon name="search"></p-icon>
-        </div>
+        <p-grid>
+          <p-grid-item size="12">
+            <p-headline variant="headline-4">Buttons</p-headline>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-divider class="divider"></p-divider>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-button id="btn-submit" disabled="false">Submit</p-button>
+          </p-grid-item>
+          <p-grid-item size="12" class="contentWrapperSmall">
+            <p-button-pure id="btn-dismiss" disabled="true">Dismiss</p-button-pure>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-divider class="divider"></p-divider>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-headline variant="headline-4">Icons</p-headline>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-divider class="divider"></p-divider>
+          </p-grid-item>
+          <p-grid-item size="12">
+            <p-icon name="configurate"></p-icon>
+            <p-icon name="compare"></p-icon>
+            <p-icon name="search"></p-icon>
+          </p-grid-item>
+        </p-grid>
       </div>
     </div>
+
+    <script>
+      var btnSubmit = document.getElementById('btn-submit');
+      var btnDismiss = document.getElementById('btn-dismiss');
+
+      btnSubmit.addEventListener('click', function () {
+        btnSubmit.setAttribute('disabled', 'true');
+        btnDismiss.setAttribute('disabled', 'false');
+      });
+
+      btnDismiss.addEventListener('click', function () {
+        btnSubmit.setAttribute('disabled', 'false');
+        btnDismiss.setAttribute('disabled', 'true');
+      });
+    </script>
   </body>
 </html>
