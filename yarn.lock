@@ -14,10 +14,10 @@
     form-data "^3.0.0"
     opener "^1.5.1"
 
-"@porsche-design-system/components-js@^1.5.0-rc.0":
-  version "1.5.0-rc.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.0-rc.0.tgz#fdf864e62a55655eda3c25c0b1498b5f421c5fdd"
-  integrity sha1-/fhk5ipVZV7aPCXAsUmLX0IcX90=
+"@porsche-design-system/components-js@^1.5.1":
+  version "1.5.1"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.1.tgz#e4da48e161a91cd3e50e8f7bc465f27ca5ce384b"
+  integrity sha1-5NpI4WGpHNPlDo97xGXyfKXOOEs=
 
 "@porschehn/navigation@^1.2.1":
   version "1.2.1"
