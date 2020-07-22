@@ -15,9 +15,9 @@
     opener "^1.5.1"
 
 "@porsche-design-system/components-js@^1.5.1":
-  version "1.5.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.1.tgz#e4da48e161a91cd3e50e8f7bc465f27ca5ce384b"
-  integrity sha1-5NpI4WGpHNPlDo97xGXyfKXOOEs=
+  version "1.5.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-1.5.2.tgz#25d5b34e58a09db6ff2e3c6fa9fd1b16761c0695"
+  integrity sha1-JdWzTlignbb/Ljxvqf0bFnYcBpU=
 
 "@porschehn/navigation@^1.2.1":
   version "1.2.1"
