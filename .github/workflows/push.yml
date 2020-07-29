@@ -4,6 +4,8 @@ on:
       - master
       - feature/*
       - housekeeping/*
+      - issue/*
+      - dependaboz/**
 name: "Sample Integration VanillaJS"
 jobs:
   build:
