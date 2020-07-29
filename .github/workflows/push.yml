@@ -5,7 +5,7 @@ on:
       - feature/*
       - housekeeping/*
       - issue/*
-      - dependaboz/**
+      - dependabot/**
 name: "Sample Integration VanillaJS"
 jobs:
   build:
