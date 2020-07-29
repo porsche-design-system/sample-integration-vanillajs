@@ -4,15 +4,19 @@
   "private": true,
   "scripts": {
     "start": "serve",
-    "build": "mkdir -p build && rm -rf ./build/* && mkdir -p build/node_modules && cp index.html ./build/ && cp -R ./node_modules/@porsche-design-system ./build/node_modules/ && cp -R ./node_modules/@porschehn ./build/node_modules/",
+    "build": "yarn clean && yarn build:index && yarn build:node_modules && yarn build:clean-folders",
+    "build:index": "mkdir -p build/node_modules && cp index.html ./build",
+    "build:node_modules": "cp -R ./node_modules/@porsche-design-system ./build/node_modules && cp -R ./node_modules/@porschehn ./build/node_modules",
+    "build:clean-folders": "find ./build -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
+    "clean": "rm -rf ./build",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
     "@porsche-design-system/components-js": "^1.5.2",
-    "@porschehn/navigation": "^1.2.1"
+    "@porschehn/navigation": "^1.4.2"
   },
   "devDependencies": {
     "prettier": "^2.0.5",
-    "serve": "^11.3.1"
+    "serve": "^11.3.2"
   }
 }
