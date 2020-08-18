@@ -31,7 +31,9 @@
       p-text-field-wrapper,
       p-text-list,
       p-text-list-item,
-      p-textarea-wrapper { visibility: hidden }
+      p-textarea-wrapper {
+        visibility: hidden;
+      }
 
       .pageLayout {
         margin-left: 10%;
@@ -44,22 +46,16 @@
         margin-top: 2rem;
       }
     </style>
-
-    <script
-      type="module"
-      src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.js"
-    ></script>
-    <script
-      type="module"
-      src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"
-    ></script>
-    <script type="module" src="node_modules/performancetest/dist/performancetest/performancetest.js"></script>
+    <!-- prettier-ignore -->
+    <script type="module" src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.esm.js"></script>
+    <!-- prettier-ignore -->
+    <script nomodule src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.js"></script>
+    <!-- prettier-ignore -->
+    <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
+    <!-- prettier-ignore -->
     <script nomodule src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.js"></script>
-    <link rel="stylesheet" href="https://cdn.ui.porsche.com/porsche-design-system/style/font-face.min.677d41d9905a04aadcb253f71e5f71e9.css">
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdn.ui.porsche.com/porsche-design-system/style/font-face.min.677d41d9905a04aadcb253f71e5f71e9.css"/>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -74,14 +70,7 @@
         <p-grid-item size="12">
           <p-divider class="divider"></p-divider>
         </p-grid-item>
-        <p-grid-item size="12">
-          <p-link-pure href="#home">
-            Home
-          </p-link-pure>
-          <p-link-pure href="#performancePage">
-            Performance
-          </p-link-pure>
-        </p-grid-item>
+        <p-grid-item id="nav" size="12"> </p-grid-item>
         <p-grid-item size="12">
           <p-divider class="divider"></p-divider>
         </p-grid-item>
@@ -90,6 +79,26 @@
     </div>
 
     <script type="text/javascript">
+      if (!window.location.href.includes('#')) {
+        document.location.hash = '#home';
+      }
+      const nav = document.getElementById('nav');
+      [
+        {
+          path: '#home',
+          name: 'Home',
+        },
+        {
+          path: '#performance',
+          name: 'Performance',
+        },
+      ].forEach((item) => {
+        const element = document.createElement('p-link-pure');
+        element.setAttribute('href', item.path);
+        element.innerHTML = item.name;
+        nav.appendChild(element);
+      });
+
       const updateRoute = async () => {
         if (['#', ''].includes(document.location.hash)) {
           return;
