@@ -1,0 +1,8 @@
+<script id="testPage">
+  const script = document.getElementById('testPage');
+  Array.from(Array(25)).forEach((val, i) => {
+    var text = document.createElement('p-text');
+    text.innerHTML = 'Lorem Ipsum' + i;
+    script.parentElement.insertBefore(text, script);
+  });
+</script>
