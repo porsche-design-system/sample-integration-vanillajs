@@ -12,7 +12,7 @@
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "^1.5.4-rc.0",
+    "@porsche-design-system/components-js": "^1.5.4",
     "@porschehn/navigation": "^1.4.2"
   },
   "devDependencies": {
