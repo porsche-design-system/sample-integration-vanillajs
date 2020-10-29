@@ -46,16 +46,8 @@
         margin-top: 2rem;
       }
     </style>
-    <!-- prettier-ignore -->
-    <script type="module" src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.esm.js"></script>
-    <!-- prettier-ignore -->
-    <script nomodule src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.js"></script>
-    <!-- prettier-ignore -->
-    <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
-    <!-- prettier-ignore -->
-    <script nomodule src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.js"></script>
-    <!-- prettier-ignore -->
-    <link rel="stylesheet" href="https://cdn.ui.porsche.com/porsche-design-system/style/font-face.min.677d41d9905a04aadcb253f71e5f71e9.css"/>
+    <!--  This is for optimizing the FOUT (https://designsystem.porsche.com/v2/#/performance/loading-behaviour)  -->
+    <link rel=stylesheet href=https://cdn.ui.porsche.com/porsche-design-system/styles/font-face.min.de7353ac41430a74da152a5bf0e7bb5b.css>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -77,6 +69,15 @@
       </p-grid>
       <div id="app"></div>
     </div>
+
+    <!-- prettier-ignore -->
+    <script src="node_modules/@porsche-design-system/components-js/index.js"></script>
+    <!-- prettier-ignore -->
+    <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
+
+    <script type="text/javascript">
+        porscheDesignSystem.load();
+    </script>
 
     <script type="text/javascript">
       if (!window.location.href.includes('#')) {
