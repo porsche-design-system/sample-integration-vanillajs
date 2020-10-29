@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@porsche-design-system/components-js@2.0.0-alpha.4":
-  version "2.0.0-alpha.4"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.4.tgz#3a4edd506588194174e814f8f87c9f37a3751e1a"
-  integrity sha1-Ok7dUGWIGUF06BT4+HyfN6N1Hho=
+"@porsche-design-system/components-js@2.0.0-alpha.6":
+  version "2.0.0-alpha.6"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.6.tgz#2d307d7629dc983881cc552aa427ca0af501c2bd"
+  integrity sha1-LTB9dincmDiBzFUqpCfKCvUBwr0=
 
 "@porschehn/navigation@^1.4.2":
   version "1.9.1"
