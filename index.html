@@ -6,35 +6,9 @@
     <meta name="robots" content="noindex, nofollow" />
 
     <title>Sample Integration VanillaJS</title>
+    <!-- prettier-ignore -->
+    <style>p-button,p-button-pure,p-checkbox-wrapper,p-content-wrapper,p-divider,p-fieldset-wrapper,p-flex,p-flex-item,p-grid,p-grid-item,p-headline,p-icon,p-link,p-link-pure,p-link-social,p-marque,p-pagination,p-radio-button-wrapper,p-select-wrapper,p-spinner,p-text,p-text-field-wrapper,p-text-list,p-text-list-item,p-textarea-wrapper{visibility:hidden}</style>
     <style>
-      p-button,
-      p-button-pure,
-      p-checkbox-wrapper,
-      p-content-wrapper,
-      p-divider,
-      p-fieldset-wrapper,
-      p-flex,
-      p-flex-item,
-      p-grid,
-      p-grid-item,
-      p-headline,
-      p-icon,
-      p-link,
-      p-link-pure,
-      p-link-social,
-      p-marque,
-      p-pagination,
-      p-radio-button-wrapper,
-      p-select-wrapper,
-      p-spinner,
-      p-text,
-      p-text-field-wrapper,
-      p-text-list,
-      p-text-list-item,
-      p-textarea-wrapper {
-        visibility: hidden;
-      }
-
       .pageLayout {
         margin-left: 10%;
         margin-right: 10%;
@@ -50,7 +24,8 @@
     <script src="node_modules/@porsche-design-system/components-js/index.js"></script>
     <!-- prettier-ignore -->
     <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
-    <!--  This is for optimizing the FOUT (https://designsystem.porsche.com/v2/#/performance/loading-behaviour)  -->
+    <!-- This is for optimizing the FOUT (https://designsystem.porsche.com/v2/#/performance/loading-behaviour) -->
+    <!-- prettier-ignore -->
     <link rel=stylesheet href=https://cdn.ui.porsche.com/porsche-design-system/styles/font-face.min.de7353ac41430a74da152a5bf0e7bb5b.css>
   </head>
   <body>
@@ -75,7 +50,7 @@
     </div>
 
     <script type="text/javascript">
-        porscheDesignSystem.load();
+      porscheDesignSystem.load();
     </script>
 
     <script type="text/javascript">
@@ -106,6 +81,7 @@
 
         const app = document.getElementById('app');
         const page = document.location.hash.substr(1);
+
         app.innerHTML = await (await fetch(`/pages/${page}.html`)).text();
 
         // execute scripts inserted via innerHTML
