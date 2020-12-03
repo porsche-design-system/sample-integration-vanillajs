@@ -12,6 +12,11 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/partials/-/@porsche-design-system/partials-2.2.0.tgz#623e40a693314ef22f165cfa4acf96c2d5f86867"
   integrity sha1-Yj5AppMxTvIvFlz6Ss+WwtX4aGc=
 
+"@porsche-design-system/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
+  integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
+
 "@porschehn/navigation@^1.4.2":
   version "1.9.1"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.9.1.tgz#c63e9fb4a5489c71515712e483575237d65902a8"
