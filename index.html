@@ -18,84 +18,81 @@
         margin-bottom: 2rem;
         margin-top: 2rem;
       }
-
-      .contentWrapperSmall {
-        margin-top: 1rem;
-      }
-
-      .contentWrapperBig {
-        margin-top: 2rem;
-      }
     </style>
+    <script src="node_modules/@porsche-design-system/components-js/index.js"></script>
+    <!-- prettier-ignore -->
+    <script type="module" src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"></script>
 
-    <script
-      type="module"
-      src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="node_modules/@porsche-design-system/components-js/dist/porsche-design-system/porsche-design-system.js"
-    ></script>
-    <script
-      type="module"
-      src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.esm.js"
-    ></script>
-    <script nomodule src="node_modules/@porschehn/navigation/dist/porsche-navigation/porsche-navigation.js"></script>
+    <!-- prettier-ignore -->
+    <style>p-button,p-button-pure,p-checkbox-wrapper,p-content-wrapper,p-divider,p-fieldset-wrapper,p-flex,p-flex-item,p-grid,p-grid-item,p-headline,p-icon,p-link,p-link-pure,p-link-social,p-marque,p-pagination,p-radio-button-wrapper,p-select-wrapper,p-spinner,p-text,p-text-field-wrapper,p-text-list,p-text-list-item,p-textarea-wrapper{visibility:hidden}</style>
+    <!-- prettier-ignore -->
+    <link rel=stylesheet href=https://cdn.ui.porsche.com/porsche-design-system/styles/font-face.min.de7353ac41430a74da152a5bf0e7bb5b.css>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div class="pageLayout">
-      <p-headline variant="headline-2" align="center">Example usage of the Porsche-Design-System VanillaJS</p-headline>
-      <p-divider class="divider"></p-divider>
-
-      <phn-header env="preview" style="position: absolute; left: 0; right: 0;"></phn-header>
-
-      <div style="padding-top: 150px;">
-        <p-grid>
-          <p-grid-item size="12">
-            <p-headline variant="headline-4">Buttons</p-headline>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-divider class="divider"></p-divider>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-button id="btn-submit" disabled="false">Submit</p-button>
-          </p-grid-item>
-          <p-grid-item size="12" class="contentWrapperSmall">
-            <p-button-pure id="btn-dismiss" disabled="true">Dismiss</p-button-pure>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-divider class="divider"></p-divider>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-headline variant="headline-4">Icons</p-headline>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-divider class="divider"></p-divider>
-          </p-grid-item>
-          <p-grid-item size="12">
-            <p-icon name="configurate"></p-icon>
-            <p-icon name="compare"></p-icon>
-            <p-icon name="search"></p-icon>
-          </p-grid-item>
-        </p-grid>
-      </div>
+      <p-grid>
+        <p-grid-item size="12">
+          <p-headline variant="headline-2" align="center"
+            >Example usage of the Porsche-Design-System VanillaJS</p-headline
+          >
+        </p-grid-item>
+        <p-grid-item size="12">
+          <p-divider class="divider"></p-divider>
+        </p-grid-item>
+        <p-grid-item id="nav" size="12"></p-grid-item>
+        <p-grid-item size="12">
+          <p-divider class="divider"></p-divider>
+        </p-grid-item>
+      </p-grid>
+      <div id="app"></div>
     </div>
 
-    <script>
-      var btnSubmit = document.getElementById('btn-submit');
-      var btnDismiss = document.getElementById('btn-dismiss');
+    <script type="text/javascript">
+      porscheDesignSystem.load();
+    </script>
 
-      btnSubmit.addEventListener('click', function () {
-        btnSubmit.setAttribute('disabled', 'true');
-        btnDismiss.setAttribute('disabled', 'false');
+    <script type="text/javascript">
+      if (!window.location.href.includes('#')) {
+        document.location.hash = '#home';
+      }
+      const nav = document.getElementById('nav');
+      [
+        {
+          path: '#home',
+          name: 'Home',
+        },
+        {
+          path: '#performance',
+          name: 'Performance',
+        },
+      ].forEach((item) => {
+        const element = document.createElement('p-link-pure');
+        element.setAttribute('href', item.path);
+        element.innerHTML = item.name;
+        nav.appendChild(element);
       });
 
-      btnDismiss.addEventListener('click', function () {
-        btnSubmit.setAttribute('disabled', 'false');
-        btnDismiss.setAttribute('disabled', 'true');
-      });
+      const updateRoute = async () => {
+        if (['#', ''].includes(document.location.hash)) {
+          return;
+        }
+
+        const app = document.getElementById('app');
+        const page = document.location.hash.substr(1);
+
+        app.innerHTML = await (await fetch(`pages/${page}.html`)).text();
+
+        // execute scripts inserted via innerHTML
+        const scripts = app.getElementsByTagName('script');
+        for (let i = 0; i < scripts.length; i++) {
+          eval(scripts[i].innerText);
+        }
+      };
+
+      window.addEventListener('hashchange', updateRoute);
+      updateRoute();
     </script>
     <script
       type="module"

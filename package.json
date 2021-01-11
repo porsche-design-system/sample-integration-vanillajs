@@ -2,22 +2,29 @@
   "name": "sample-integration-vanillajs",
   "version": "0.1.0",
   "private": true,
+  "prettier": "@porsche-design-system/prettier-config",
   "scripts": {
+    "prestart": "yarn replace",
+    "replace": "yarn replace:coreStyles && yarn replace:fontFaceCSS",
+    "replace:coreStyles": "partial=$(node -e 'console.log(require(\"@porsche-design-system/partials\").getPorscheDesignSystemCoreStyles())') && regex='<!--PLACEHOLDER_CORE_STYLES-->|<style>(p-[a-z-]*,?)*{visibility:hidden}<\\/style>' && sed -i '' -E -e \"s@$regex@$partial@\" index.html",
+    "replace:fontFaceCSS": "partial=$(node -e 'console.log(require(\"@porsche-design-system/partials\").getFontFaceCSS())') && regex='<!--PLACEHOLDER_FONT_FACE_CSS-->|<link rel=\"?stylesheet\"? href=\"?https:\\/\\/cdn\\.ui\\.porsche\\.(com|cn)\\/porsche-design-system\\/styles\\/font-face\\.min\\..*\\.css\"?>' && sed -i '' -E -e \"s@$regex@$partial@\" index.html",
     "start": "serve",
-    "build": "yarn clean && yarn build:index && yarn build:node_modules && yarn build:clean-folders",
+    "build": "yarn clean && yarn build:index && yarn build:pages && yarn build:node_modules && yarn build:clean-folders",
     "build:index": "mkdir -p build/node_modules && cp index.html ./build",
+    "build:pages": "cp -R pages ./build",
     "build:node_modules": "cp -R ./node_modules/@porsche-design-system ./build/node_modules && cp -R ./node_modules/@porschehn ./build/node_modules",
     "build:clean-folders": "find ./build -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
     "clean": "rm -rf ./build",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/browser-notification-banner": "^1.0.0-alpha.6",
-    "@porsche-design-system/components-js": "^1.5.2",
-    "@porschehn/navigation": "^1.4.2"
+    "@porsche-design-system/components-js": "2.0.0-alpha.10",
+    "@porschehn/navigation": "^1.12.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.5",
+    "@porsche-design-system/partials": "^2.2.0",
+    "@porsche-design-system/prettier-config": "^1.0.0",
+    "prettier": "^2.2.1",
     "serve": "^11.3.2"
   }
 }

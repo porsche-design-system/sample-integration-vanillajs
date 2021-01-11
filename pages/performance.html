@@ -1,0 +1,84 @@
+<p-grid>
+  <p-grid-item size="12">
+    <p-headline variant="headline-4">Choose Element and Count</p-headline>
+  </p-grid-item>
+  <p-grid-item size="4"
+    ><p-select-wrapper><select id="selectElement"></select></p-select-wrapper
+  ></p-grid-item>
+  <p-grid-item size="4"
+    ><p-select-wrapper><select id="selectCount"></select></p-select-wrapper
+  ></p-grid-item>
+  <p-grid-item size="4"
+    ><p-checkbox-wrapper label="Render"><input id="shouldRender" type="checkbox" checked /></p-checkbox-wrapper
+  ></p-grid-item>
+</p-grid>
+<p-grid style="margin-top: 2rem">
+  <p-grid-item id="content" size="12"></p-grid-item>
+</p-grid>
+
+<script>
+  const SELECTABLE_ELEMENTS = ['text', 'checkbox', 'button'];
+  const SELECTABLE_COUNTS = [25, 50, 100];
+
+  const content = document.getElementById('content');
+  const shouldRender = document.getElementById('shouldRender');
+  const selectElement = document.getElementById('selectElement');
+  const selectCount = document.getElementById('selectCount');
+
+  const createOption = (value) => {
+    const optionElement = document.createElement('option');
+    optionElement.value = value;
+    optionElement.innerHTML = value;
+    return optionElement;
+  };
+
+  SELECTABLE_ELEMENTS.forEach((value) => {
+    selectElement.appendChild(createOption(value));
+  });
+
+  SELECTABLE_COUNTS.forEach((value) => {
+    selectCount.appendChild(createOption(value));
+  });
+
+  const onSelectChange = () => renderContent(selectElement.value, +selectCount.value);
+  selectElement.addEventListener('change', onSelectChange);
+  selectCount.addEventListener('change', onSelectChange);
+
+  shouldRender.addEventListener('click', (event) => {
+    if (!event.target.checked) {
+      renderContent(undefined, 0);
+    } else {
+      onSelectChange();
+    }
+  });
+
+  const createElement = (element, idx) => {
+    const children = 'Lorem Ipsum ' + idx;
+    switch (element) {
+      case 'text':
+        const text = document.createElement('p-text');
+        text.innerHTML = children;
+        return text;
+      case 'checkbox':
+        const checkbox = document.createElement('p-checkbox-wrapper');
+        checkbox.setAttribute('label', children);
+        const input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        checkbox.appendChild(input);
+        return checkbox;
+      case 'button':
+        const button = document.createElement('p-button');
+        button.setAttribute('variant', 'primary');
+        button.innerHTML = children;
+        return button;
+    }
+  };
+
+  const renderContent = (element, count) => {
+    content.innerHTML = '';
+    Array.from(Array(count)).forEach((val, i) => {
+      content.appendChild(createElement(element, i));
+    });
+  };
+  renderContent('text', 25);
+</script>
