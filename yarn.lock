@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@porsche-design-system/components-js@2.0.0-alpha.7":
-  version "2.0.0-alpha.7"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.7.tgz#670007fd9bbb34696da75baa029fcef09868fbbb"
-  integrity sha1-ZwAH/Zu7NGltp1uqAp/O8Jho+7s=
+"@porsche-design-system/components-js@2.0.0-alpha.10":
+  version "2.0.0-alpha.10"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.10.tgz#72c61e06e9418ce0329343076c1a4876fa086cd0"
+  integrity sha1-csYeBulBjOAyk0MHbBpIdvoIbNA=
 
 "@porsche-design-system/partials@^2.2.0":
   version "2.2.0"
@@ -17,10 +17,10 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porschehn/navigation@^1.4.2":
-  version "1.9.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.9.1.tgz#c63e9fb4a5489c71515712e483575237d65902a8"
-  integrity sha1-xj6ftKVInHFRVxLkg1dSN9ZZAqg=
+"@porschehn/navigation@^1.12.0":
+  version "1.12.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.12.0.tgz#e8ddc0e74a0d12529636a14287425ed6a4448c3a"
+  integrity sha1-6N3A50oNElKWNqFCh0Je1qREjDo=
 
 "@zeit/schemas@2.6.0":
   version "2.6.0"
