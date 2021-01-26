@@ -7,10 +7,10 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-2.0.0.tgz#4767d7d2bc1fedb226bc9766059947b0d8951151"
   integrity sha1-R2fX0rwf7bImvJdmBZlHsNiVEVE=
 
-"@porsche-design-system/components-js@2.0.0-alpha.10":
-  version "2.0.0-alpha.10"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.10.tgz#72c61e06e9418ce0329343076c1a4876fa086cd0"
-  integrity sha1-csYeBulBjOAyk0MHbBpIdvoIbNA=
+"@porsche-design-system/components-js@2.0.0-alpha.13":
+  version "2.0.0-alpha.13"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.0.0-alpha.13.tgz#3c0709a5261e61b9a4ec605f779ffbe3d96c0a58"
+  integrity sha1-PAcJpSYeYbmk7GBfd5/749lsClg=
 
 "@porsche-design-system/partials@^2.2.0":
   version "2.2.0"
