@@ -7,25 +7,20 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/browser-notification/-/@porsche-design-system/browser-notification-2.0.0.tgz#4767d7d2bc1fedb226bc9766059947b0d8951151"
   integrity sha1-R2fX0rwf7bImvJdmBZlHsNiVEVE=
 
-"@porsche-design-system/components-js@2.1.0-beta.0":
-  version "2.1.0-beta.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.1.0-beta.0.tgz#aab859c1d26cc661b48b9dba0437e6851f34d1e7"
-  integrity sha1-qrhZwdJsxmG0i526BDfmhR800ec=
-
-"@porsche-design-system/partials@^2.2.0":
-  version "2.2.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/partials/-/@porsche-design-system/partials-2.2.0.tgz#623e40a693314ef22f165cfa4acf96c2d5f86867"
-  integrity sha1-Yj5AppMxTvIvFlz6Ss+WwtX4aGc=
+"@porsche-design-system/components-js@2.1.0":
+  version "2.1.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/components-js/-/@porsche-design-system/components-js-2.1.0.tgz#a5737d0788de522b7baece583da707b3da5f1724"
+  integrity sha1-pXN9B4jeUit7rs5YPacHs9pfFyQ=
 
 "@porsche-design-system/prettier-config@^1.0.0":
   version "1.0.0"
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche-design-system/prettier-config/-/@porsche-design-system/prettier-config-1.0.0.tgz#3ab128c42d98cb049ffc0b141362f6963e0a93d7"
   integrity sha1-OrEoxC2YywSf/AsUE2L2lj4Kk9c=
 
-"@porschehn/navigation@^1.12.0":
-  version "1.12.0"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-1.12.0.tgz#e8ddc0e74a0d12529636a14287425ed6a4448c3a"
-  integrity sha1-6N3A50oNElKWNqFCh0Je1qREjDo=
+"@porschehn/navigation@^2.1.0":
+  version "2.1.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.1.0.tgz#3646824f6a2bed6595037e4e1fcdd3f59b998c74"
+  integrity sha1-NkaCT2or7WWVA35OH83T9ZuZjHQ=
 
 "@zeit/schemas@2.6.0":
   version "2.6.0"
