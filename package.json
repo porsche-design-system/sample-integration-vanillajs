@@ -5,12 +5,14 @@
   "prettier": "@porsche-design-system/prettier-config",
   "scripts": {
     "prestart": "yarn replace",
-    "replace": "yarn replace:intitialStyles && yarn replace:fontFaceStylesheet && yarn replace:fontPreloading && yarn replace:browserNotification",
+    "replace": "yarn replace:intitialStyles && yarn replace:componentChunkLinks && yarn replace:metaTagsAndIconLinks && yarn replace:fontFaceStylesheet && yarn replace:fontPreloading && yarn replace:browserNotification",
     "replace:intitialStyles": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_INITIAL_STYLES-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getInitialStyles())') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
+    "replace:componentChunkLinks": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_COMPONENT_CHUNKS-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getComponentChunkLinks({ components: [\"button\", \"checkbox-wrapper\", \"divider\", \"grid\", \"headline\", \"select-wrapper\"] }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:fontFaceStylesheet": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_FONT_FACE_STYLESHEET-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getFontFaceStylesheet())') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:fontPreloading": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_FONT_LATIN-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getFontLinks({ weights: [\"regular\", \"semi-bold\"] }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:browserNotification": "partial=$(node -e 'console.log(require(\"@porsche-design-system/browser-notification\").includeOverlay().replace(/(\\\\[bd\\/]|&)/g, \"\\\\$1\"))') && regex='<!--PLACEHOLDER_NOTIFICATION-->|<script>.*browser-notification.*<\\/script>' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:renameIndexHtml": "rm index.html && mv index.tmp.html index.html",
+    "replace:metaTagsAndIconLinks": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_META_TAGS_AND_ICON_LINKS-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getMetaTagsAndIconLinks({ appTitle: \"Sample Integration VanillaJS\" }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "start": "serve",
     "build": "yarn clean && yarn build:index && yarn build:pages && yarn build:node_modules && yarn build:clean-folders",
     "build:index": "mkdir -p build/node_modules && cp index.html ./build",
@@ -22,7 +24,7 @@
   },
   "dependencies": {
     "@porsche-design-system/browser-notification": "^2.0.0",
-    "@porsche-design-system/components-js": "2.1.0",
+    "@porsche-design-system/components-js": "2.2.0-beta.0",
     "@porschehn/navigation": "^2.1.0"
   },
   "devDependencies": {
