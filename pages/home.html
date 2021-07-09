@@ -69,8 +69,8 @@
   const accordions = document.querySelectorAll('p-accordion');
 
   accordions.forEach((accordion) =>
-          accordion.addEventListener('accordionChange', (e) => {
-            e.target.open = e.detail.open;
-          })
+     accordion.addEventListener('accordionChange', (e) => {
+       e.target.open = e.detail.open;
+     })
   );
 </script>
