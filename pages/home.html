@@ -27,6 +27,28 @@
       <p-icon name="compare"></p-icon>
       <p-icon name="search"></p-icon>
     </p-grid-item>
+    <p-grid-item size="12">
+      <p-headline variant="headline-4">Accordion</p-headline>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12" ali>
+      <div style="max-width: 800px">
+        <p-accordion heading="Some Heading" tag="h3">
+          <p-text>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p-text>
+        </p-accordion>
+        <p-accordion heading="Some Heading" tag="h3">
+          <p-text>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p-text>
+        </p-accordion>
+      </div>
+    </p-grid-item>
   </p-grid>
 </div>
 
@@ -43,4 +65,12 @@
     btnSubmit.setAttribute('disabled', 'false');
     btnDismiss.setAttribute('disabled', 'true');
   });
+
+  const accordions = document.querySelectorAll('p-accordion');
+
+  accordions.forEach((accordion) =>
+     accordion.addEventListener('accordionChange', (e) => {
+       e.target.open = e.detail.open;
+     })
+  );
 </script>
