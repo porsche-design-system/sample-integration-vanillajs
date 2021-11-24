@@ -14,6 +14,9 @@
       <p-button-pure id="btn-dismiss" disabled="true">Dismiss</p-button-pure>
     </p-grid-item>
     <p-grid-item size="12">
+      <p-button id="btn-queue-toast" type="button">Queue Toast</p-button>
+    </p-grid-item>
+    <p-grid-item size="12">
       <p-divider class="divider"></p-divider>
     </p-grid-item>
     <p-grid-item size="12">
@@ -73,4 +76,14 @@
        e.target.open = e.detail.open;
      })
   );
+
+  const toast = document.querySelector('p-toast');
+  let toastCounter = 1;
+
+  customElements.whenDefined('p-toast').then(() => {
+    document.querySelector('#btn-queue-toast').addEventListener('click', () => {
+      toast.addMessage({ text: `Some message ${toastCounter}`, state: 'neutral' });
+      toastCounter++;
+    });
+  });
 </script>
