@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@porsche-design-system/browser-notification": "^4.1.1",
-    "@porsche-design-system/components-js": "2.9.2-rc.1",
+    "@porsche-design-system/components-js": "2.9.2",
     "@porschehn/navigation": "^2.13.1"
   },
   "devDependencies": {
