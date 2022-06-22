@@ -68,6 +68,20 @@
         sed diam voluptua.
       </p-text>
     </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-segmented-control value="1" aria-label="Choose an Option">
+        <p-segmented-control-item value="1">Option 1</p-segmented-control-item>
+        <p-segmented-control-item value="2">Option 2</p-segmented-control-item>
+        <p-segmented-control-item value="3">Option 3</p-segmented-control-item>
+        <p-segmented-control-item value="4">Option 4</p-segmented-control-item>
+        <p-segmented-control-item value="5">Option 5</p-segmented-control-item>
+      </p-segmented-control>
+
+      <p-text id="debugElement">Current value of segmented-control: 1</p-text>
+    </p-grid-item>
   </p-grid>
 </div>
 
@@ -101,5 +115,14 @@
       toast.addMessage({ text: `Some message ${toastCounter}`, state: 'neutral' });
       toastCounter++;
     });
+  });
+
+  const segmentedControl = document.querySelector('p-segmented-control');
+  const debugElement = document.querySelector('#debugElement');
+
+  segmentedControl.addEventListener('segmentedControlChange', (e) => {
+    const { value } = e.detail;
+    segmentedControl.value = value;
+    debugElement.innerText = `Current value of segmented-control: ${value}`;
   });
 </script>
