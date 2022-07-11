@@ -5,10 +5,9 @@
   "prettier": "@porsche-design-system/prettier-config",
   "scripts": {
     "prestart": "yarn replace",
-    "replace": "yarn replace:browserNotification:banner && yarn replace:browserNotification:cookieOverlay && yarn replace:browserNotification:overlay && yarn replace:componentChunkLinks && yarn replace:fontPreloading && yarn replace:fontFaceStylesheet && yarn replace:iconLinks && yarn replace:intitialStyles && yarn replace:metaTagsAndIconLinks",
-    "replace:browserNotification:banner": "placeholder='<!--PLACEHOLDER_BROWSER_NOTIFICATION_BANNER-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/browser-notification\").includeBanner().replace(/(\\\\[bd\\/]|&)/g, \"\\\\$1\"))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
-    "replace:browserNotification:cookieOverlay": "placeholder='<!--PLACEHOLDER_BROWSER_NOTIFICATION_COOKIE_OVERLAY-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/browser-notification\").includeCookieOverlay().replace(/(\\\\[bd\\/]|&)/g, \"\\\\$1\"))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html  > index.tmp.html && yarn replace:renameIndexHtml",
-    "replace:browserNotification:overlay": "placeholder='<!--PLACEHOLDER_BROWSER_NOTIFICATION_OVERLAY-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/browser-notification\").includeOverlay().replace(/(\\\\[bd\\/]|&)/g, \"\\\\$1\"))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
+    "replace": "yarn replace:cookiesFallback && yarn replace:browserSupportFallback && yarn replace:componentChunkLinks && yarn replace:fontPreloading && yarn replace:fontFaceStylesheet && yarn replace:iconLinks && yarn replace:intitialStyles && yarn replace:metaTagsAndIconLinks",
+    "replace:cookiesFallback": "placeholder='<!--PLACEHOLDER_COOKIES_FALLBACK_SCRIPT-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getCookiesFallbackScript())') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
+    "replace:browserSupportFallback": "placeholder='<!--PLACEHOLDER_BROWSER_SUPPORT_FALLBACK_SCRIPT-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getBrowserSupportFallbackScript())') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:componentChunkLinks": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_COMPONENT_CHUNKS-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getComponentChunkLinks({ components: [\"button\", \"checkbox-wrapper\", \"divider\", \"grid\", \"headline\", \"select-wrapper\"] }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:fontFaceStylesheet": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_FONT_FACE_STYLESHEET-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getFontFaceStylesheet())') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:fontPreloading": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_FONT_LATIN-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getFontLinks({ weights: [\"regular\", \"semi-bold\"] }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
@@ -26,8 +25,7 @@
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/browser-notification": "^4.1.2",
-    "@porsche-design-system/components-js": "2.13.0-rc.5",
+    "@porsche-design-system/components-js": "2.14.0-rc.1",
     "@porschehn/navigation": "^2.16.0"
   },
   "devDependencies": {
@@ -36,7 +34,7 @@
     "serve": "^13.0.2"
   },
   "resolutions": {
-    "@porsche-design-system/components-js": "2.13.0-rc.5",
+    "@porsche-design-system/components-js": "2.14.0-rc.1",
     "@porsche-design-system/utilities": "5.3.1"
   }
 }
