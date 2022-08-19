@@ -14,10 +14,10 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-js@2.11.0", "@porsche-design-system/components-js@2.15.0-rc.0":
-  version "2.15.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.15.0-rc.0.tgz#e4f4211c142e65a44423bf5d81ba4d757b5c3d2a"
-  integrity sha512-MGbei4WgIppOCiN0BOmu51blL7qX2LzfWZ8Wj3/bvNFgh4YyG0wJX7DN5mvT6b9M4hevHN2TXsM+91Qab1JXsA==
+"@porsche-design-system/components-js@2.11.0", "@porsche-design-system/components-js@2.15.0-rc.1":
+  version "2.15.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.15.0-rc.1.tgz#2b5da3415af3cdd1c0f475ac40eecebde92d6145"
+  integrity sha512-ab16WHw7A/WLlLwliRJ7LmdCCHfpYGi5rcV0pYUH/vHn61oZB1J9M84zIa17VHo1Rf9GOU2dDf9adhrZBOiUlQ==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
@@ -659,9 +659,9 @@ supports-color@^7.1.0:
     has-flag "^4.0.0"
 
 type-fest@^2.13.0:
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.18.0.tgz#fdef3a74e0a9e68ebe46054836650fb91ac3881e"
-  integrity sha512-pRS+/yrW5TjPPHNOvxhbNZexr2bS63WjrMU8a+VzEBhUi9Tz1pZeD+vQz3ut0svZ46P+SRqMEPnJmk2XnvNzTw==
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.18.1.tgz#a94f068c60b5a2d6beccccffa711210d7dd99b38"
+  integrity sha512-UKCINsd4qiATXD6OIlnQw9t1ux/n2ld+Nl0kzPbCONhCaUIS/BhJbNw14w6584HCQWf3frBK8vmWnGZq/sbPHQ==
 
 update-check@1.5.4:
   version "1.5.4"
