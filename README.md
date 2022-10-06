@@ -1,6 +1,6 @@
 # VanillaJS - Sample integration with Porsche Design System
 
-This is project shows the example usage of the Porsche Design System Components in VanillaJS. See also the [deployed project](https://porscheui.github.io/sample-integration-vanillajs).
+This is project shows the example usage of the Porsche Design System Components in VanillaJS. See also the [deployed project](https://porsche-design-system.github.io/sample-integration-vanillajs).
 
 For further documentation regarding designing websites and the correct usage of the components, you can visit our website https://designsystem.porsche.com/.
 
@@ -28,7 +28,7 @@ Runs the app in static mode. Open [http://localhost:5000](http://localhost:5000)
 
 ### Getting started
 
-1. Clone [`sample-integration-vanillajs` repository](https://github.com/porscheui/sample-integration-vanillajs)
+1. Clone [`sample-integration-vanillajs` repository](https://github.com/porsche-design-system/sample-integration-vanillajs)
 1. Switch to **project root directory**
 1. Execute command `npm login --registry=https://porscheui.jfrog.io/porscheui/api/npm/npm/`
 1. Enter username, password (Artifactory API Key, **not** Artifactory password!) and e-mail address when asked in terminal
