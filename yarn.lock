@@ -27,10 +27,10 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-js@2.19.0-rc.1":
-  version "2.19.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.19.0-rc.1.tgz#b9ab0b20ec671d84a5fa2ff1000e5e3eea928077"
-  integrity sha512-JV7BDm0RLJ7hZgfhE1364FGHFO2q0zW2xrpbWySHi9ooNERuTHvyB23jdN1FFt7u82B/67xGWaXqKW/g6u7DLg==
+"@porsche-design-system/components-js@2.19.0-rc.2":
+  version "2.19.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.19.0-rc.2.tgz#6e70a2546fed1cdfe4ea682aeb992e921da60cb7"
+  integrity sha512-Ek4lZyJVvx0DMAJYGWqffmJd2zFI+AtfJde5oOMoXpXrL5R+sfQA3I4X0U5ck9DxfC8M+svPT/pkgK2kRKZf0g==
 
 "@porsche-design-system/components-js@^2.17.0":
   version "2.18.0"
