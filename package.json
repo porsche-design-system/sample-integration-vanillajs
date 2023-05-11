@@ -26,11 +26,11 @@
   },
   "dependencies": {
     "@porsche-design-system/components-js": "2.21.0-rc.0",
-    "@porschehn/navigation": "2.23.2"
+    "@porschehn/navigation": "3.0.5"
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
-    "prettier": "^2.8.1",
-    "serve": "^14.1.2"
+    "prettier": "^2.8.8",
+    "serve": "^14.2.0"
   }
 }

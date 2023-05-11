@@ -2,18 +2,10 @@
 # yarn lockfile v1
 
 
-"@auth0/auth0-spa-js@1.22.0":
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-1.22.0.tgz#3e7b494efed9c1aea1744b4addb3393dc99e1508"
-  integrity sha512-y4/vd7dhAwD3ueYAZhuo06muv/scxq+lHnI2lsT5h/3gSLOOXjDE2rjVmMexeYw4t02oXwHpjphYPfL9hgUsuA==
-  dependencies:
-    abortcontroller-polyfill "^1.7.3"
-    browser-tabs-lock "^1.2.15"
-    core-js "^3.22.4"
-    es-cookie "^1.3.2"
-    fast-text-encoding "^1.0.3"
-    promise-polyfill "^8.2.3"
-    unfetch "^4.2.0"
+"@auth0/auth0-spa-js@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@auth0/auth0-spa-js/-/auth0-spa-js-2.0.4.tgz#81f6b5d9f72617ed30ee53cdf27dcd7a216bf2da"
+  integrity sha512-NgD6Fkm5Xnbned1VjhEW8irm1/Y8AWtdSLexgLXNwwBVgfnYicCVBu8w75m2t+4QljXkTcI7IXVEFhVmxMuxaA==
 
 "@openid/appauth@^1.3.1":
   version "1.3.1"
@@ -27,25 +19,30 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-js@2.20.0-rc.1":
-  version "2.20.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.20.0-rc.1.tgz#1fff642b51168fd026d2b8c9217ce84f3a547761"
-  integrity sha512-vx8la5tb+G3jBryq7c3rcF8wFB1ZUY4lfinurZ29q7zqHUpFvOrhuNkCd6wT71UoQhh35ALFCnQJW/1Rm9pvyQ==
+"@porsche-design-system/components-js@2.21.0-rc.0":
+  version "2.21.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0-rc.0.tgz#812d2fe1998ffc1a278d6d5a9a7dccc366a2e107"
+  integrity sha512-GpS/Gfa9rmPSKAq7SMul6qKCxBi4QySMgRs9d67a/PKZTvb7QlcPuqX/oyghqNCueNK8W8XR+HJ3+N5IVn7NwA==
 
-"@porsche-design-system/components-js@^2.17.0":
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.18.0.tgz#498fe25950174014156deab7d54569d6253049b2"
-  integrity sha512-GXjApbCKzJM2HLaDvVo5S01LPF/sBXJPi6mFs4w190Het33fLNf7kzw9NZpxBVPFKmp8pCgNfjSjWT9hoZ+Myw==
+"@porsche-design-system/components-js@^2.21.0":
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0.tgz#916d523189ebaed53e73ae5ad48db97f4fb54d20"
+  integrity sha512-qgbiTxKXlkn1iygGkvbcq4sSm2l6+MdUN35vd5m5dexwVS1hgcLcYH5sXnaf3G1wrNtvLeZ4Tt7vct7We6Q5pQ==
+
+"@porsche-design-system/components-js_3@npm:@porsche-design-system/components-js@3.0.0-alpha.6":
+  version "3.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.0.0-alpha.6.tgz#02f4af7679eebd9a6c4f6d894c4c893428228845"
+  integrity sha512-/Y6CvHvDXVSIFgq021kSfDob0CDayfe2/ykqadurl+0Y32i1ja9u3V87499PM1FYToB4a/wQFGrcTPsS1aK7zw==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@porsche-design-system/prettier-config/-/prettier-config-1.0.1.tgz#6b0fc60d3d42c7b4d9c998bf7b685513a5488400"
   integrity sha512-IhoHGmsPoO4VBoCebNGejBNHJFdAldV3m8kAoO458MJeaQJODM2b1UFzvGeTXGOMIFH4pkshcjZcF36vQvsn9w==
 
-"@porsche-design-system/utilities@^5.3.1":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/utilities/-/utilities-5.4.0.tgz#92e0b3bf77eb8d6d387f7e4615d56892b4772ca2"
-  integrity sha512-D91Ll3prnm/eExmVyR/kQlE1FNia74weRqN7rh6Gw4JbAvzEbnIe0MHdt7JqJ8TRvXmBg8218f1oHFGp3vmMUg==
+"@porsche-design-system/utilities@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/utilities/-/utilities-5.4.1.tgz#6961b0310b2808828578374dcd95f34ff1f7a253"
+  integrity sha512-/geTdkCKyYzM28/v8SZGyoAi57sKJQWJEz4u7LEri068E+3iSr4BVmwBYaKFbJ7RHk9eoiycQput756aJlND+Q==
   dependencies:
     csstype "^3.1.1"
 
@@ -59,30 +56,31 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.0.1.tgz#849b3d31563bb9106c5a27d77dcb2f08d099d991"
   integrity sha512-ZyLEa3ERr3spclscodJGSTWuh1flyRnkONk3YBOWhFIkFiZ9hU+af2GklaTu+4HfzJK/bfPMPWfcJyck5DvgLg==
 
-"@porschehn/navigation@2.23.2":
-  version "2.23.2"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-2.23.2.tgz#494029d8292526fb60face834a0ecefb12f8127a"
-  integrity sha512-4603qriGnwhROtNMto2BMWV+oq211+LEc6qAXUOgk8ZbuLDay+fTOEmOa4dNgyxrrOReQzsa0OU4jmrnCm3rMQ==
+"@porschehn/navigation@3.0.5":
+  version "3.0.5"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.0.5.tgz#2f9eb8fe19a8326393b7edc2b678f8f2021f12ab"
+  integrity sha512-6S5kY1zpBTpdLN8R2sUrd2zxcHbWrK414K++PFOB33GoQunjbnZSIWPyIjC0BH1cQDqGh61LG9F0LxB2uWX43g==
   dependencies:
-    "@auth0/auth0-spa-js" "1.22.0"
+    "@auth0/auth0-spa-js" "^2.0.4"
     "@openid/appauth" "^1.3.1"
-    "@porsche-design-system/components-js" "^2.17.0"
-    "@porsche-design-system/utilities" "^5.3.1"
+    "@porsche-design-system/components-js" "^2.21.0"
+    "@porsche-design-system/components-js_3" "npm:@porsche-design-system/components-js@3.0.0-alpha.6"
+    "@porsche-design-system/utilities" "^5.4.1"
     "@porsche/globaldatalayer" "^4.0.0"
     "@porsche/globaldatalayer-events" "^0.1.18"
-    "@stencil/core" "2.20.0"
-    "@stencil/store" "^2.0.1"
+    "@stencil/core" "^3.2.0"
+    "@stencil/store" "^2.0.5"
     uuid "^9.0.0"
 
-"@stencil/core@2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.20.0.tgz#0e68b5b42e727233803291eb0367ab2b53f7f1f3"
-  integrity sha512-ka+eOW+dNteXIfLCRipNbbAlBEQjqJ2fkx3fxzlKgnNHEQMdZiuIjlWt63KzvOJStNeuADdQXo89BB1dC2VRUw==
+"@stencil/core@^3.2.0":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-3.2.2.tgz#cf3b4ffb7992d0197aa1987dbc5236c4eb98cb6b"
+  integrity sha512-wXb9cVWL0T3cTwYLveekdTFCRGx6+9hpVDEXna+N8K8OPoW6xtFAHRLv+LjOM7k59PkA8MG3IinAfV7Y+xa0Hw==
 
-"@stencil/store@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.1.tgz#55b27211a008717634caec1c6539d78d5659ec3a"
-  integrity sha512-zGVu8/zvMNouo068wppVihHBPejU1rbanfq5VHvgw7lCI2BzQVY+RFNlnWQ4PrGwSybLw50363y3MkClWF7k+A==
+"@stencil/store@^2.0.5":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.6.tgz#46234b7b7e6877f5fc33c22587522c2016cdad97"
+  integrity sha512-hiMbebqE1C6bF1Hpmq4QFvPW3Yx63fDRw/88QUe5OBOLzwpwmt8dF6FWhs+O6R31xv+EEZPInp+LRVdIh9+PIg==
 
 "@types/base64-js@^1.3.0":
   version "1.3.0"
@@ -101,15 +99,10 @@
   resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
   integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
-"@zeit/schemas@2.21.0":
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/@zeit/schemas/-/schemas-2.21.0.tgz#cd242c6551ffb51830049d68d9743ab65b45b820"
-  integrity sha512-/J4WBTpWtQ4itN1rb3ao8LfClmVcmz2pO6oYb7Qd4h7VSqUhIbJIvrykz9Ew1WMg6eFWsKdsMHc5uPbFxqlCpg==
-
-abortcontroller-polyfill@^1.7.3:
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.5.tgz#6738495f4e901fbb57b6c0611d0c75f76c485bed"
-  integrity sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==
+"@zeit/schemas@2.29.0":
+  version "2.29.0"
+  resolved "https://registry.yarnpkg.com/@zeit/schemas/-/schemas-2.29.0.tgz#a59ae6ebfdf4ddc66a876872dd736baa58b6696c"
+  integrity sha512-g5QiLIfbg3pLuYUJPlisNKY+epQJTcMDsOnVNkscrDP1oi7vmJnzOANYJI/1pZcVJ6umUkBv3aFtlg1UvUHGzA==
 
 accepts@~1.3.5:
   version "1.3.8"
@@ -204,13 +197,6 @@ brace-expansion@^1.1.7:
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
-
-browser-tabs-lock@^1.2.15:
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/browser-tabs-lock/-/browser-tabs-lock-1.2.15.tgz#d5012e652e2a0cb4eba471b0a2300c2fa5d92788"
-  integrity sha512-J8K9vdivK0Di+b8SBdE7EZxDr88TnATing7XoLw6+nFkXMQ6sVBh92K3NQvZlZU91AIkFRi0w3sztk5Z+vsswA==
-  dependencies:
-    lodash ">=4.17.21"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -310,11 +296,6 @@ content-disposition@0.5.2:
   resolved "https://registry.yarnpkg.com/content-disposition/-/content-disposition-0.5.2.tgz#0cf68bb9ddf5f2be7961c3a85178cb85dba78cb4"
   integrity sha512-kRGRZw3bLlFISDBgwTSA1TMBFN6J6GWDeubmDE3AF+3+yXL8hTWv8r5rkLbqYXY4RjPk/EzHnClI3zQf1cFmHA==
 
-core-js@^3.22.4:
-  version "3.26.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
-  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
-
 cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
@@ -361,11 +342,6 @@ emoji-regex@^9.2.2:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
-es-cookie@^1.3.2:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/es-cookie/-/es-cookie-1.4.0.tgz#6765b645d4e2fe9b0612bef6f6d18f49f8f016da"
-  integrity sha512-V4bHxyGBmwwiV+CKTLUPLmwhcutTxGEC5n4HWaUDSnTvkNvfIjkMw8qIVTVgPeNCWojgR5IUzFnGenNvCoKQ5A==
-
 execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
@@ -385,11 +361,6 @@ fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
-
-fast-text-encoding@^1.0.3:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/fast-text-encoding/-/fast-text-encoding-1.0.6.tgz#0aa25f7f638222e3396d72bf936afcf1d42d6867"
-  integrity sha512-VhXlQgj9ioXCqGstD37E/HBeqEGV/qOD/kmbVG8h5xKBYvM1L3lR1Zn4555cQ8GkYbJa8aJSipLPndE1k6zK2w==
 
 fast-url-parser@1.1.3:
   version "1.1.3"
@@ -468,11 +439,6 @@ json-schema-traverse@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
-
-lodash@>=4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -569,15 +535,10 @@ path-to-regexp@2.2.1:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
   integrity sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==
 
-prettier@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
-  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
-
-promise-polyfill@^8.2.3:
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-8.2.3.tgz#2edc7e4b81aff781c88a0d577e5fe9da822107c6"
-  integrity sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==
+prettier@^2.8.8:
+  version "2.8.8"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
+  integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
 punycode@^1.3.2:
   version "1.4.1"
@@ -648,12 +609,12 @@ serve-handler@6.1.5:
     path-to-regexp "2.2.1"
     range-parser "1.2.0"
 
-serve@^14.1.2:
-  version "14.1.2"
-  resolved "https://registry.yarnpkg.com/serve/-/serve-14.1.2.tgz#65d7a3cec5a0b876c46bb8927fabc27957c2e1e0"
-  integrity sha512-luwVfJwbeE7dhCKeRU0vIBpt4bXdbAfzwsWJIQ5eqrIW2e+4nLWXbSlZ0WzelSFHQq+FlueOW6dr90jEewS9zw==
+serve@^14.2.0:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/serve/-/serve-14.2.0.tgz#3d768e88fa13ad8644f2393599189707176e66b8"
+  integrity sha512-+HOw/XK1bW8tw5iBilBz/mJLWRzM8XM6MPxL4J/dKzdxq1vfdEWSwhaR7/yS8EJp5wzvP92p1qirysJvnEtjXg==
   dependencies:
-    "@zeit/schemas" "2.21.0"
+    "@zeit/schemas" "2.29.0"
     ajv "8.11.0"
     arg "5.0.2"
     boxen "7.0.0"
@@ -735,11 +696,6 @@ type-fest@^2.13.0:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.19.0.tgz#88068015bb33036a598b952e55e9311a60fd3a9b"
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
-
-unfetch@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
-  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
 
 update-check@1.5.4:
   version "1.5.4"
