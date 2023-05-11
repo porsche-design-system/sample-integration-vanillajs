@@ -143,7 +143,7 @@
   const accordions = document.querySelectorAll('p-accordion');
 
   accordions.forEach((accordion) =>
-    accordion.addEventListener('accordionChange', (e) => {
+    accordion.addEventListener('update', (e) => {
       e.target.open = e.detail.open;
     })
   );
@@ -161,7 +161,7 @@
   const segmentedControl = document.querySelector('p-segmented-control');
   const debugElement = document.querySelector('#debugElement');
 
-  segmentedControl.addEventListener('segmentedControlChange', (e) => {
+  segmentedControl.addEventListener('update', (e) => {
     const { value } = e.detail;
     segmentedControl.value = value;
     debugElement.innerText = `Current value of segmented-control: ${value}`;
@@ -216,7 +216,7 @@
   prevButton.addEventListener('click', () => onNextPrevStep('prev'));
   nextButton.addEventListener('click', () => onNextPrevStep('next'));
 
-  stepper.addEventListener('stepChange', (e) => {
+  stepper.addEventListener('update', (e) => {
     const {activeStepIndex} = e.detail;
 
     for (let i = activeStepIndex + 1; i < stepElements.length; i++) {
