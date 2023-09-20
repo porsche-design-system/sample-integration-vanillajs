@@ -19,32 +19,20 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-js@3.7.0-rc.0":
-  version "3.7.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.7.0-rc.0.tgz#e17134da8b9432ec61111fb765c12eef2dde5be7"
-  integrity sha512-0qxzW5cSibY6Th2qq9rJoOUtL/LgpXDlRbWw66Pyu8qhq8lFycHmo1S+a5ugUdulXqlAgyYyB7/jwRE15K+lFA==
+"@porsche-design-system/components-js@3.6.1":
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.6.1.tgz#3e45a7f8a991b9fcfc0ca4cb8cf466d692b29629"
+  integrity sha512-yOkr3QZg13Pcf1xxm6vY/yll7i9eUhBjxfF4LtC+XeZbSjq0O2uwXYEuG2IZ6MJ1StNnf5uV4vynwN1kYn+JKQ==
 
-"@porsche-design-system/components-js@npm:@porsche-design-system/components-js@2.21.0":
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-2.21.0.tgz#916d523189ebaed53e73ae5ad48db97f4fb54d20"
-  integrity sha512-qgbiTxKXlkn1iygGkvbcq4sSm2l6+MdUN35vd5m5dexwVS1hgcLcYH5sXnaf3G1wrNtvLeZ4Tt7vct7We6Q5pQ==
-
-"@porsche-design-system/components-js_3@npm:@porsche-design-system/components-js@3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.5.0.tgz#c32cd3143030d18f812ae1674ff1a689bd722b39"
-  integrity sha512-GvxHudeW4HP+IKO6ZPDFQWR8deONd83UJdB6cU4FQZ3vubCYB3oslNqSrjqbSB3740vKZVjJe5F8UHO3ytygkw==
+"@porsche-design-system/components-js@3.7.0-rc.1":
+  version "3.7.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.7.0-rc.1.tgz#788bee67c59280a3959decc4c12b668eb89c3c04"
+  integrity sha512-1BVFYzs0awHM1RMsKxHGVrGNKFAdl4XW8vNSNSv3pTsSAk6s2vGGmRhoqqBXYzGjZUnS7QiLexIiKIFP9v/PPQ==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@porsche-design-system/prettier-config/-/prettier-config-1.0.1.tgz#6b0fc60d3d42c7b4d9c998bf7b685513a5488400"
   integrity sha512-IhoHGmsPoO4VBoCebNGejBNHJFdAldV3m8kAoO458MJeaQJODM2b1UFzvGeTXGOMIFH4pkshcjZcF36vQvsn9w==
-
-"@porsche-design-system/utilities@npm:@porsche-design-system/utilities@5.4.1":
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/utilities/-/utilities-5.4.1.tgz#6961b0310b2808828578374dcd95f34ff1f7a253"
-  integrity sha512-/geTdkCKyYzM28/v8SZGyoAi57sKJQWJEz4u7LEri068E+3iSr4BVmwBYaKFbJ7RHk9eoiycQput756aJlND+Q==
-  dependencies:
-    csstype "^3.1.1"
 
 "@porsche/globaldatalayer-events@^0.1.18":
   version "0.1.29"
@@ -56,16 +44,14 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.0.1.tgz#849b3d31563bb9106c5a27d77dcb2f08d099d991"
   integrity sha512-ZyLEa3ERr3spclscodJGSTWuh1flyRnkONk3YBOWhFIkFiZ9hU+af2GklaTu+4HfzJK/bfPMPWfcJyck5DvgLg==
 
-"@porschehn/navigation@3.2.3":
-  version "3.2.3"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.2.3.tgz#0c0844b5bc412275d5b8cf6cd103baf0dd676fa3"
-  integrity sha512-VVxJO+YQ6dumcW6C/Vh4H6QDMOYxcpahrWSzJDvVzEsJrg1mN9h1583Y3eRotZaveg+tUIupSWckhQqdZHRGKw==
+"@porschehn/navigation@3.2.4":
+  version "3.2.4"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.2.4.tgz#93809388be7d13e6ddc63bb20e06243a3475b27d"
+  integrity sha512-ivaH0sWWEH8bWQ7LuyY/CO9ST6rMpRTT/b40kvNSYNMIVh4NAPmo+U16QYCqhzBFEnmMxZA3kTHTXNrP8v0D1A==
   dependencies:
     "@auth0/auth0-spa-js" "^2.1.1"
     "@openid/appauth" "^1.3.1"
-    "@porsche-design-system/components-js" "npm:@porsche-design-system/components-js@2.21.0"
-    "@porsche-design-system/components-js_3" "npm:@porsche-design-system/components-js@3.5.0"
-    "@porsche-design-system/utilities" "npm:@porsche-design-system/utilities@5.4.1"
+    "@porsche-design-system/components-js" "3.6.1"
     "@porsche/globaldatalayer" "^4.0.0"
     "@porsche/globaldatalayer-events" "^0.1.18"
     "@stencil/core" "^3.2.0"
@@ -304,11 +290,6 @@ cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
-
-csstype@^3.1.1:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
-  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 debug@2.6.9:
   version "2.6.9"
