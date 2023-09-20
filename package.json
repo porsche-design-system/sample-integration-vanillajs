@@ -25,12 +25,12 @@
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "3.0.0-rc.3",
-    "@porschehn/navigation": "3.0.5"
+    "@porsche-design-system/components-js": "3.7.0-rc.1",
+    "@porschehn/navigation": "3.2.4"
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
-    "prettier": "^2.8.8",
-    "serve": "^14.2.0"
+    "prettier": "^3.0.3",
+    "serve": "^14.2.1"
   }
 }
