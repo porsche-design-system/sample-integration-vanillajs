@@ -24,10 +24,10 @@
   resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.6.1.tgz#3e45a7f8a991b9fcfc0ca4cb8cf466d692b29629"
   integrity sha512-yOkr3QZg13Pcf1xxm6vY/yll7i9eUhBjxfF4LtC+XeZbSjq0O2uwXYEuG2IZ6MJ1StNnf5uV4vynwN1kYn+JKQ==
 
-"@porsche-design-system/components-js@3.7.0-rc.1":
-  version "3.7.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.7.0-rc.1.tgz#788bee67c59280a3959decc4c12b668eb89c3c04"
-  integrity sha512-1BVFYzs0awHM1RMsKxHGVrGNKFAdl4XW8vNSNSv3pTsSAk6s2vGGmRhoqqBXYzGjZUnS7QiLexIiKIFP9v/PPQ==
+"@porsche-design-system/components-js@3.7.0-rc.2":
+  version "3.7.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.7.0-rc.2.tgz#1b117464793182b964dda748bf91d24fe72844d5"
+  integrity sha512-9Cq0dzUtwoKWGr95PwK/2OjeCXosXa5hgGDeJabCMVDCHAuQf1L3Hr3Jidjsh3neAXaAPOTzGiZmmYhrj7aaqQ==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
@@ -35,38 +35,38 @@
   integrity sha512-IhoHGmsPoO4VBoCebNGejBNHJFdAldV3m8kAoO458MJeaQJODM2b1UFzvGeTXGOMIFH4pkshcjZcF36vQvsn9w==
 
 "@porsche/globaldatalayer-events@^0.1.18":
-  version "0.1.29"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer-events/-/@porsche/globaldatalayer-events-0.1.29.tgz#d01a3c8f7b7d2e730b549e98e6d0b75295f2a3a8"
-  integrity sha512-xPsIM4vpFtcscwI3Buo/AZDw2O3z5iwcZcVm70gGepYC1Mk42L8BzYeMchThRngJ3pvuCqaSiM0KqE015jrJQQ==
+  version "0.1.30"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer-events/-/@porsche/globaldatalayer-events-0.1.30.tgz#3ff7ad18ae7c7dc030c930a3c8985d3e29db80a8"
+  integrity sha512-UtbqpVh1yz3S3l+mBCxHZdE46sTu8uiJVH3WqwLDwAOTK+VHcTpbWhGSA2znoZ9dbRg6ML9gTK0B+amOqXhiuA==
 
 "@porsche/globaldatalayer@^4.0.0":
-  version "4.0.1"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.0.1.tgz#849b3d31563bb9106c5a27d77dcb2f08d099d991"
-  integrity sha512-ZyLEa3ERr3spclscodJGSTWuh1flyRnkONk3YBOWhFIkFiZ9hU+af2GklaTu+4HfzJK/bfPMPWfcJyck5DvgLg==
+  version "4.1.2"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.1.2.tgz#6560f8144e416960d70033696630c142a140c6cd"
+  integrity sha512-zgyjW8JLIC1hXDpr6EQ7TLbqP3R5bMAwQWonLUWpCzDMe7PjTONGAKrDFNq0H5o/Y+zvBReX+hJLMXH+K525Nw==
 
-"@porschehn/navigation@3.2.4":
-  version "3.2.4"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.2.4.tgz#93809388be7d13e6ddc63bb20e06243a3475b27d"
-  integrity sha512-ivaH0sWWEH8bWQ7LuyY/CO9ST6rMpRTT/b40kvNSYNMIVh4NAPmo+U16QYCqhzBFEnmMxZA3kTHTXNrP8v0D1A==
+"@porschehn/navigation@3.2.5":
+  version "3.2.5"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.2.5.tgz#eaf80d01bb7511872b6d34e2d0caf81ab91ea827"
+  integrity sha512-7LURQVHJzhXBBkUisH6upT/IEp57DjduYLN9B17xuwp2CtCbaTjHL05n/UL0Qnhn5cQI9xNCoi0iJzbDewpohg==
   dependencies:
     "@auth0/auth0-spa-js" "^2.1.1"
     "@openid/appauth" "^1.3.1"
     "@porsche-design-system/components-js" "3.6.1"
     "@porsche/globaldatalayer" "^4.0.0"
     "@porsche/globaldatalayer-events" "^0.1.18"
-    "@stencil/core" "^3.2.0"
+    "@stencil/core" "^4.3.0"
     "@stencil/store" "^2.0.5"
     uuid "^9.0.0"
 
-"@stencil/core@^3.2.0":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-3.4.2.tgz#57ce7f71fe18c2ec0967821bec667fc453cca962"
-  integrity sha512-FAUhUVaakCy29nU2GwO/HQBRV1ihPRvncz3PUc8oR+UJLAxGabTmP8PLY7wvHfbw+Cvi4VXfJFTBvdfDu6iKPQ==
+"@stencil/core@^4.3.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.4.0.tgz#3cdc9eafe1ca6b3f8b6d861a3b849d2c65d06a9f"
+  integrity sha512-YlLyCqGBsMEuZb3XTO/STT0TX9eSwjoVhCJgtjVfQOF+ebIMVlojTh40CmDveWiWbth687cbr6S2heeussV8Sg==
 
 "@stencil/store@^2.0.5":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.9.tgz#660400fad14c99b335f64acf4a2336b006b7f651"
-  integrity sha512-wPVkgOEeOVZ6OGuUy7lV/qYyhj7Ra3vZkebqT58HdkaaAAmaUCtinUG02e05iTQIoOWpN7oNhq/MWvhY7H/Wyw==
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-2.0.10.tgz#e2cf5b70d657934ae83e5c0c302f655054a585df"
+  integrity sha512-u7N0lsGajRZzd1TfVxDZcexuTR6ERMT2v5ESCIx2wEAKSclM+iYjAQ5fMekeHtg5S2lkqLqr/r8GvmEXrtnsiw==
 
 "@types/base64-js@^1.3.0":
   version "1.3.0"
@@ -74,16 +74,16 @@
   integrity sha512-ZmI0sZGAUNXUfMWboWwi4LcfpoVUYldyN6Oe0oJ5cCsHDU/LlRq8nQKPXhYLOx36QYSW9bNIb1vvRrD6K7Llgw==
 
 "@types/jquery@^3.5.5":
-  version "3.5.18"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.18.tgz#2a4979866954e601361ddc62ea304c9e46311b77"
-  integrity sha512-sNm7O6LECFhHmF+3KYo6QIl2fIbjlPYa0PDgDQwfOaEJzwpK20Eub9Ke7VKkGsSJ2K0HUR50S266qYzRX4GlSw==
+  version "3.5.20"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.20.tgz#a23eece847591c7aaa47c52d6910052af473df4e"
+  integrity sha512-UI+EGhgYD4LdSZ8gaiziFqXYIIB38VQSDsnAs8jL/div7FGrzrShx4HKCykVzk3tPfiIlusdNP9Wi3G60LCF2Q==
   dependencies:
     "@types/sizzle" "*"
 
 "@types/sizzle@*":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
-  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.4.tgz#cd6531924f60834fa4a1b8081f9eecf9bb1117f0"
+  integrity sha512-jA2llq2zNkg8HrALI7DtWzhALcVH0l7i89yhY3iBdOz6cBPeACoFq+fkQrjHA39t1hnSFOboZ7A/AY5MMZSlag==
 
 "@zeit/schemas@2.29.0":
   version "2.29.0"
@@ -351,9 +351,9 @@ fast-url-parser@1.1.3:
     punycode "^1.3.2"
 
 follow-redirects@^1.13.3:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
-  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
+  integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -694,9 +694,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 uuid@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
-  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
+  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 vary@~1.1.2:
   version "1.1.2"
