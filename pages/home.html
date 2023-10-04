@@ -1,0 +1,244 @@
+<phn-header env="preview" locale="de-DE" style="position: absolute; left: 0; right: 0"></phn-header>
+<div style="padding-top: 150px">
+  <p-grid>
+    <p-grid-item size="12">
+      <p-heading size="medium">Buttons</p-heading>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-button id="btn-submit" disabled="false">Submit</p-button>
+    </p-grid-item>
+    <p-grid-item size="12" class="contentWrapperSmall">
+      <p-button-pure id="btn-dismiss" disabled="true">Dismiss</p-button-pure>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-button id="btn-queue-toast" type="button">Queue Toast</p-button>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-heading size="medium">Link Tile</p-heading>
+    </p-grid-item>
+    <p-grid-item size="5">
+      <p-link-tile href="#" label="Some Label" description="Default">
+        <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII=" alt="Some alt text"
+        />
+      </p-link-tile>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-heading size="medium">Icons</p-heading>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-icon name="configurate"></p-icon>
+      <p-icon name="compare"></p-icon>
+      <p-icon name="search"></p-icon>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-heading size="medium">Accordion</p-heading>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12" ali>
+      <div style="max-width: 800px">
+        <p-accordion heading="Some Heading" tag="h3">
+          <p-text>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p-text>
+        </p-accordion>
+        <p-accordion heading="Some Heading" tag="h3">
+          <p-text>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p-text>
+        </p-accordion>
+      </div>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-heading size="medium">Popover</p-heading>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-text>
+        Lorem ipsum dolor sit amet, <p-popover>Some descriptive content</p-popover> consetetur sadipscing elitr, sed
+        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<p-popover
+          description="Short info opened top"
+          direction="top"
+        ></p-popover>
+        sed diam voluptua.
+      </p-text>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-segmented-control value="1" aria-label="Choose an Option">
+        <p-segmented-control-item value="1">Option 1</p-segmented-control-item>
+        <p-segmented-control-item value="2">Option 2</p-segmented-control-item>
+        <p-segmented-control-item value="3">Option 3</p-segmented-control-item>
+        <p-segmented-control-item value="4">Option 4</p-segmented-control-item>
+        <p-segmented-control-item value="5">Option 5</p-segmented-control-item>
+      </p-segmented-control>
+
+      <p-text id="debugElement">Current value of segmented-control: 1</p-text>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-divider class="divider"></p-divider>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-stepper-horizontal>
+        <p-stepper-horizontal-item state="current">Enter personal details</p-stepper-horizontal-item>
+        <p-stepper-horizontal-item>Confirm e-mail</p-stepper-horizontal-item>
+        <p-stepper-horizontal-item>Set password</p-stepper-horizontal-item>
+      </p-stepper-horizontal>
+
+      <div id="step-content-0">
+        <p-text>A form with personal details could be displayed here.</p-text>
+      </div>
+      <div id="step-content-1" hidden>
+        <p-text>A form with a verification code input field could be displayed here.</p-text>
+      </div>
+      <div id="step-content-2" hidden>
+        <p-text>A form with a password input field could be displayed here.</p-text>
+      </div>
+
+      <p-button-group>
+        <p-button id="prev-button" icon="arrow-head-left" variant="tertiary" disabled="true">Previous Step</p-button>
+        <p-button id="next-button" variant="primary">Next Step</p-button>
+      </p-button-group>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-pin-code label="Default"></p-pin-code>
+      <p-pin-code label="Type password" type="password"></p-pin-code>
+    </p-grid-item>
+    <p-grid-item size="12">
+      <p-multi-select name="name" label="Some Label" description="Some description" theme="light" required>
+        <p-multi-select-option value="a">Option A</p-multi-select-option>
+        <p-multi-select-option value="b">Option B</p-multi-select-option>
+        <p-multi-select-option value="c">Option C</p-multi-select-option>
+        <p-multi-select-option value="d">Option D</p-multi-select-option>
+        <p-multi-select-option value="e">Option E</p-multi-select-option>
+        <p-multi-select-option value="f">Option F</p-multi-select-option>
+      </p-multi-select>
+    </p-grid-item>
+  </p-grid>
+</div>
+
+<script>
+  var btnSubmit = document.getElementById('btn-submit');
+  var btnDismiss = document.getElementById('btn-dismiss');
+
+  btnSubmit.addEventListener('click', function () {
+    btnSubmit.setAttribute('disabled', 'true');
+    btnDismiss.setAttribute('disabled', 'false');
+  });
+
+  btnDismiss.addEventListener('click', function () {
+    btnSubmit.setAttribute('disabled', 'false');
+    btnDismiss.setAttribute('disabled', 'true');
+  });
+
+  const accordions = document.querySelectorAll('p-accordion');
+
+  accordions.forEach((accordion) =>
+    accordion.addEventListener('update', (e) => {
+      e.target.open = e.detail.open;
+    })
+  );
+
+  const toast = document.querySelector('p-toast');
+  let toastCounter = 1;
+
+  customElements.whenDefined('p-toast').then(() => {
+    document.querySelector('#btn-queue-toast').addEventListener('click', () => {
+      toast.addMessage({ text: `Some message ${toastCounter}`, state: 'info' });
+      toastCounter++;
+    });
+  });
+
+  const segmentedControl = document.querySelector('p-segmented-control');
+  const debugElement = document.querySelector('#debugElement');
+
+  segmentedControl.addEventListener('update', (e) => {
+    const { value } = e.detail;
+    segmentedControl.value = value;
+    debugElement.innerText = `Current value of segmented-control: ${value}`;
+  });
+
+  const stepper = document.querySelector('p-stepper-horizontal');
+  const stepElements = Array.from(document.querySelectorAll('p-stepper-horizontal-item'));
+  const prevButton = document.querySelector('#prev-button');
+  const nextButton = document.querySelector('#next-button');
+  const panels = document.querySelectorAll('[id^="step-content"]');
+
+  function getActiveStepIndex(steps) {
+    return steps.findIndex((step) => step.state === 'current');
+  }
+
+  function manageContent(activeStepIndex) {
+    if (activeStepIndex === 0) {
+      prevButton.setAttribute('disabled', 'true');
+    } else {
+      prevButton.removeAttribute('disabled');
+    }
+
+    if (activeStepIndex === stepElements.length - 1) {
+      nextButton.setAttribute('disabled', 'true');
+    } else {
+      nextButton.removeAttribute('disabled');
+    }
+
+    panels.forEach((panel, i) => {
+      if (i === activeStepIndex) {
+        panel.removeAttribute('hidden');
+      } else {
+        panel.setAttribute('hidden', '');
+      }
+    });
+  }
+
+  function onNextPrevStep(direction) {
+    const activeStepIndex = getActiveStepIndex(stepElements);
+
+    if (direction === 'next') {
+      stepElements[activeStepIndex].state = 'complete';
+      stepElements[activeStepIndex + 1].state = 'current';
+      manageContent(activeStepIndex + 1);
+    } else {
+      stepElements[activeStepIndex].state = undefined;
+      stepElements[activeStepIndex - 1].state = 'current';
+      manageContent(activeStepIndex - 1);
+    }
+  }
+
+  prevButton.addEventListener('click', () => onNextPrevStep('prev'));
+  nextButton.addEventListener('click', () => onNextPrevStep('next'));
+
+  stepper.addEventListener('update', (e) => {
+    const {activeStepIndex} = e.detail;
+
+    for (let i = activeStepIndex + 1; i < stepElements.length; i++) {
+      // reset step state when going back via stepper horizontal item click
+      stepElements[i].state = undefined;
+    }
+    stepElements[activeStepIndex].state = 'current';
+
+    manageContent(activeStepIndex);
+  });
+</script>

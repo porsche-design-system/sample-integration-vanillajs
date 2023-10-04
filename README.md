@@ -1,1 +1,0 @@
-# sample-integration-vanillajs
