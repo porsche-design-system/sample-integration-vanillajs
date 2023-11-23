@@ -19,15 +19,10 @@
     form-data "^4.0.0"
     opener "^1.5.2"
 
-"@porsche-design-system/components-js@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.6.1.tgz#3e45a7f8a991b9fcfc0ca4cb8cf466d692b29629"
-  integrity sha512-yOkr3QZg13Pcf1xxm6vY/yll7i9eUhBjxfF4LtC+XeZbSjq0O2uwXYEuG2IZ6MJ1StNnf5uV4vynwN1kYn+JKQ==
-
-"@porsche-design-system/components-js@3.8.0-rc.0":
-  version "3.8.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.8.0-rc.0.tgz#63153a8ebffb8aa3f5929b19b4d31af8c3b350ba"
-  integrity sha512-YniDF6hbL8Pw9wiz0lp5RBk4F+ROBJksZYrNZPkMlN4jHxyGHgl5sCrVUTYgpm7b/Jx4kpKDVuSNJZkMCqZvpw==
+"@porsche-design-system/components-js@3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.8.0.tgz#6ec9b53a032adf72f376da0f5cad2af371eac36b"
+  integrity sha512-THbucP2s+LuXvuv4FJtFwH5lM1WUBgzH3gKyMQ9Z0oykvOP156DPWhzO75jnPEsu22BTJVC6nlTCIvspKg6Eyw==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
@@ -44,14 +39,14 @@
   resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porsche/globaldatalayer/-/@porsche/globaldatalayer-4.1.2.tgz#6560f8144e416960d70033696630c142a140c6cd"
   integrity sha512-zgyjW8JLIC1hXDpr6EQ7TLbqP3R5bMAwQWonLUWpCzDMe7PjTONGAKrDFNq0H5o/Y+zvBReX+hJLMXH+K525Nw==
 
-"@porschehn/navigation@3.2.6":
-  version "3.2.6"
-  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.2.6.tgz#cb24d7ed4d7f35783e028a2f2201b074b5c11d42"
-  integrity sha512-gSCYjCoakl2PUWxmsc9wqA5S+1pr3xDlB3Vcfnnhd59Cgd9qkgow1jdnHD0pnLtoSJGc9KnPs0VpuPEkokVuHg==
+"@porschehn/navigation@3.3.0":
+  version "3.3.0"
+  resolved "https://porscheui.jfrog.io/porscheui/api/npm/npm/@porschehn/navigation/-/@porschehn/navigation-3.3.0.tgz#95a5f2248992d0f3b4ba717112a9ac65d77e9dc1"
+  integrity sha512-poi3HuIR37rD5E4ocbFTQEG6vltY1/+hO7uF5f+TdxhD9k0hT7ikjuHR4zDj5V8wNLdB9K2T9cYFjzwSDh7F9Q==
   dependencies:
     "@auth0/auth0-spa-js" "^2.1.1"
     "@openid/appauth" "^1.3.1"
-    "@porsche-design-system/components-js" "3.6.1"
+    "@porsche-design-system/components-js" "3.8.0"
     "@porsche/globaldatalayer" "^4.0.0"
     "@porsche/globaldatalayer-events" "^0.1.18"
     "@stencil/core" "^4.3.0"
@@ -516,10 +511,10 @@ path-to-regexp@2.2.1:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
   integrity sha512-gu9bD6Ta5bwGrrU8muHzVOBFFREpp2iRkVfhBJahwJ6p6Xw20SjT0MxLnwkjOibQmGSYhiUnf2FLe7k+jcFmGQ==
 
-prettier@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
-  integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
+prettier@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
+  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
 
 punycode@^1.3.2:
   version "1.4.1"
