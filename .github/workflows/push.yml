@@ -25,7 +25,7 @@ jobs:
         with:
           entrypoint: run-build
       - name: "Store build artifact"
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: sample-build
           path: ./build
@@ -38,7 +38,7 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v3
       - name: "Restore build artifact"
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4
         with:
           name: sample-build
           path: ./build
