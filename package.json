@@ -19,14 +19,14 @@
     "build": "yarn clean && yarn build:index && yarn build:pages && yarn build:node_modules && yarn build:clean-folders",
     "build:index": "mkdir -p build && cp index.html ./build && touch ./build/.nojekyll",
     "build:pages": "cp -R pages ./build",
-    "build:node_modules": "mkdir -p build/node_modules && cp -R ./node_modules/@porsche-design-system ./build/node_modules && cp -R ./node_modules/@porschehn ./build/node_modules",
+    "build:node_modules": "mkdir -p build/node_modules && cp -R ./node_modules/@porsche-design-system ./build/node_modules",
     "build:clean-folders": "find ./build -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
     "clean": "rm -rf ./build",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "3.21.0",
-    "@porschehn/navigation": "3.3.0"
+    "@porsche-design-system/components-js": "3.22.0"
+
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
