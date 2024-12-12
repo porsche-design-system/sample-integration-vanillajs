@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@porsche-design-system/components-js@3.22.0":
-  version "3.22.0"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.22.0.tgz#8e0dd6d625e3f6f66dc5070edd9951f369123438"
-  integrity sha512-FghJVkYLCA/uRsbo692ZzJ7KJZ3F7MYQliWA4zH1qEuyA/XL++Fh0l27B+umoxe7EO0HLepo+KgR9smPfu+Hbw==
+"@porsche-design-system/components-js@3.23.0-rc.0":
+  version "3.23.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.23.0-rc.0.tgz#0eb8b008d205b615d6e48f822f5fb94d0c26475a"
+  integrity sha512-BDXNzoW/E+KyFDsje4r/1j0zF6+1FbPXhvANi6Er+Ffn6vAc+hsgX6xpx6Q+vZQ1c+9j4O8GT3dsucQrYssANA==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
