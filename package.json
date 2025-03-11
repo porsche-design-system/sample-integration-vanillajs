@@ -26,7 +26,8 @@
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "3.27.0-rc.5"
+    "@porsche-design-system/components-js": "3.27.1"
+
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
