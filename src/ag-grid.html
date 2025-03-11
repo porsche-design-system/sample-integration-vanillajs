@@ -1,14 +1,5 @@
 <div id="myGrid" style="height: 50vh; padding: 1rem"></div>
 <script type="module">
-    import { pdsTheme } from '@porsche-design-system/components-js/ag-grid';
-    import { createGrid } from 'ag-grid-community';
-    import {
-        ModuleRegistry,
-        ClientSideRowModelModule,
-    } from 'ag-grid-community';
-
-    ModuleRegistry.registerModules([ClientSideRowModelModule]);
-
     class ButtonRenderer {
         eGui;
 
@@ -92,7 +83,6 @@
     ];
 
     const gridOptions = {
-        theme: pdsTheme,
         // Data to be displayed
         rowData: rowData.map((row, index) => ({ active: Boolean(index % 2) /* odd rows */, ...row })),
         // Columns to be displayed (Should match rowData properties)
@@ -148,10 +138,7 @@
         },
         // Grid Options & Callbacks
         pagination: true,
-        sideBar: true,
-        // loading: true,
-        enableRangeSelection: true,
     };
 
-    createGrid(document.querySelector('#myGrid'), gridOptions);
+    agGrid.createGrid(document.querySelector('#myGrid'), gridOptions);
 </script>

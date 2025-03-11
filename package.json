@@ -17,23 +17,23 @@
     "replace:renameIndexHtml": "rm index.html && mv index.tmp.html index.html",
     "start": "vite",
     "preview": "vite preview",
-    "build": "yarn clean && yarn build:index && yarn build:pages && yarn build:node_modules && yarn build:clean-folders",
+    "build": "yarn clean && yarn build:index && yarn build:src && yarn build:node_modules && yarn build:clean-folders",
     "build:index": "vite build && touch ./dist/.nojekyll",
-    "build:pages": "cp -R pages ./dist",
+    "build:src": "cp -R src ./dist",
     "build:node_modules": "mkdir -p dist/node_modules && cp -R ./node_modules/@porsche-design-system ./dist/node_modules",
     "build:clean-folders": "find ./dist -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
     "clean": "rm -rf ./dist",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "3.27.1"
-
+    "@porsche-design-system/components-js": "3.27.1",
+    "ag-grid-community": "33.0.4"
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
-    "ag-grid-community": "33.0.4",
     "prettier": "^3.2.4",
-    "vite": "^6.1.1"
+    "vite": "^6.1.1",
+    "vite-plugin-html": "^3.2.2"
   },
   "volta": {
     "node": "20.10.0",
