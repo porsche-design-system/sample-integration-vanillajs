@@ -15,23 +15,25 @@
     "replace:intitialStyles": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_INITIAL_STYLES-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getInitialStyles({skeletonTagNames: [\"p-button\", \"p-button-pure\", \"p-checkbox-wrapper\", \"p-fieldset-wrapper\", \"p-link\", \"p-link-pure\", \"p-link-social\", \"p-radio-button-wrapper\", \"p-select-wrapper\", \"p-textarea-wrapper\", \"p-text-field-wrapper\"]}))') && regex=$placeholder'.*' && sed -E -e \"s^$regex^$partial^\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:metaTagsAndIconLinks": "placeholder='<!--PLACEHOLDER_PORSCHE_DESIGN_SYSTEM_META_TAGS_AND_ICON_LINKS-->' && partial=$placeholder$(node -e 'console.log(require(\"@porsche-design-system/components-js/partials\").getMetaTagsAndIconLinks({ appTitle: \"Sample Integration VanillaJS\" }))') && regex=$placeholder'.*' && sed -E -e \"s@$regex@$partial@\" index.html > index.tmp.html && yarn replace:renameIndexHtml",
     "replace:renameIndexHtml": "rm index.html && mv index.tmp.html index.html",
-    "start": "serve",
-    "build": "yarn clean && yarn build:index && yarn build:pages && yarn build:node_modules && yarn build:clean-folders",
-    "build:index": "mkdir -p build && cp index.html ./build && touch ./build/.nojekyll",
-    "build:pages": "cp -R pages ./build",
-    "build:node_modules": "mkdir -p build/node_modules && cp -R ./node_modules/@porsche-design-system ./build/node_modules",
-    "build:clean-folders": "find ./build -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
-    "clean": "rm -rf ./build",
+    "start": "vite",
+    "preview": "vite preview",
+    "build": "yarn clean && yarn build:index && yarn build:src && yarn build:node_modules && yarn build:clean-folders",
+    "build:index": "vite build && touch ./dist/.nojekyll",
+    "build:src": "cp -R src ./dist",
+    "build:node_modules": "mkdir -p dist/node_modules && cp -R ./node_modules/@porsche-design-system ./dist/node_modules",
+    "build:clean-folders": "find ./dist -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
+    "clean": "rm -rf ./dist",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
-    "@porsche-design-system/components-js": "3.27.1-rc.0"
-
+    "@porsche-design-system/components-js": "3.27.1",
+    "ag-grid-community": "33.0.4"
   },
   "devDependencies": {
     "@porsche-design-system/prettier-config": "^1.0.1",
     "prettier": "^3.2.4",
-    "serve": "^14.2.1"
+    "vite": "^6.1.1",
+    "vite-plugin-html": "^3.2.2"
   },
   "volta": {
     "node": "20.10.0",
