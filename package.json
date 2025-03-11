@@ -18,11 +18,11 @@
     "start": "vite",
     "preview": "vite preview",
     "build": "yarn clean && yarn build:index && yarn build:src && yarn build:node_modules && yarn build:clean-folders",
-    "build:index": "vite build && touch ./dist/.nojekyll",
-    "build:src": "cp -R src ./dist",
-    "build:node_modules": "mkdir -p dist/node_modules && cp -R ./node_modules/@porsche-design-system ./dist/node_modules",
-    "build:clean-folders": "find ./dist -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
-    "clean": "rm -rf ./dist",
+    "build:index": "vite build && touch ./build/.nojekyll",
+    "build:src": "cp -R src ./build",
+    "build:node_modules": "mkdir -p build/node_modules && cp -R ./node_modules/@porsche-design-system ./build/node_modules",
+    "build:clean-folders": "find ./build -maxdepth 5 -type d -name .bin -exec rm -rf {} \\;",
+    "clean": "rm -rf ./build",
     "prettier": "prettier --write '**/*.html'"
   },
   "dependencies": {
