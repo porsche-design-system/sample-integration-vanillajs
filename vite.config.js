@@ -3,6 +3,10 @@ import * as partials from '@porsche-design-system/components-js/partials';
 import {createHtmlPlugin} from "vite-plugin-html";
 
 export default defineConfig({
+  build: {
+    outDir: 'build',
+    emptyOutDir: true,
+  },
   plugins: [
     createHtmlPlugin({
       inject: {
