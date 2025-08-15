@@ -25,7 +25,8 @@
     <p-grid-item size="5">
       <p-link-tile href="#" label="Some Label" description="Default">
         <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII=" alt="Some alt text"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAABlBMVEUAAAD2vP9xXLiUAAAAAXRSTlMAQObYZgAAABxJREFUGNNjYOBgYGBhYKAZ/R8MDsD4Q5amkz8ASp4PtTYYQZIAAAAASUVORK5CYII="
+          alt="Some alt text"
         />
       </p-link-tile>
     </p-grid-item>
@@ -128,7 +129,7 @@
       <p-pin-code label="Type password" type="password"></p-pin-code>
     </p-grid-item>
     <p-grid-item size="12">
-      <p-multi-select name="name" label="Some Label" description="Some description" theme="light" required>
+      <p-multi-select name="name" label="Some Label" description="Some description" theme="light" required compact>
         <p-multi-select-option value="a">Option A</p-multi-select-option>
         <p-multi-select-option value="b">Option B</p-multi-select-option>
         <p-multi-select-option value="c">Option C</p-multi-select-option>
@@ -148,6 +149,9 @@
     <p-input-text label="Some Text" value="Sample text"></p-input-text>
     <p-input-time label="Some Time" value="14:30"></p-input-time>
     <p-input-url label="Some Url" value="https://example.com" indicator="true"></p-input-url>
+  </p-grid-item>
+  <p-grid-item size="12">
+    <p-flag></p-flag>
   </p-grid-item>
 </div>
 
@@ -242,7 +246,7 @@
   nextButton.addEventListener('click', () => onNextPrevStep('next'));
 
   stepper.addEventListener('update', (e) => {
-    const {activeStepIndex} = e.detail;
+    const { activeStepIndex } = e.detail;
 
     for (let i = activeStepIndex + 1; i < stepElements.length; i++) {
       // reset step state when going back via stepper horizontal item click
