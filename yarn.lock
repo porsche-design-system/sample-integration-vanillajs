@@ -188,10 +188,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@porsche-design-system/components-js@3.27.3":
-  version "3.27.3"
-  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.27.3.tgz#4efb205408113ef53468069f911626d260091f34"
-  integrity sha512-nvdKnU+Ddsbni88kI0vRVPAxLE/SDnQ08BxQvx+vTmvNCsp4N1maQW9mQnPSXKbZLm47nBZBWMblLwPd02Qb7w==
+"@porsche-design-system/components-js@3.29.0":
+  version "3.29.0"
+  resolved "https://registry.yarnpkg.com/@porsche-design-system/components-js/-/components-js-3.29.0.tgz#d82dfbdfea8c7e85d60e0dd89598737216a8cffd"
+  integrity sha512-L6J9VynouE1w5SRvQgX/sos30D9A6SnO/9cFuD4Nu3KHQRAe3hu/1yDSckEJ/W/6tlRrToR3R5XwuGj5xPv0sQ==
 
 "@porsche-design-system/prettier-config@^1.0.1":
   version "1.0.1"
